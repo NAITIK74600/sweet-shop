@@ -306,64 +306,7 @@ Authorization: Bearer YOUR_JWT_TOKEN
 ![Sweet Form](screenshots/sweet-form.png)
 
 ### Search and Filter
-![Search Feature](screenshots/search.png)
-
-## 🤖 My AI Usage
-
-This project was developed with the assistance of AI tools to enhance productivity and code quality. Here's a detailed account of how AI was used throughout the development process:
-
-### AI Tools Used
-
-1. **GitHub Copilot** - Primary AI assistant for code completion and generation
-2. **ChatGPT (GPT-4)** - Used for architecture planning and problem-solving
-
-### How AI Was Used
-
-#### Project Setup & Architecture (15% of development time)
-- **Used ChatGPT to:**
-  - Design the overall project structure and folder organization
-  - Plan the database schema and model relationships
-  - Determine best practices for TypeScript configuration
-  - Outline the API endpoint structure
-
-#### Backend Development (40% of development time)
-- **Used GitHub Copilot to:**
-  - Generate boilerplate code for Express routes and controllers
-  - Suggest test cases for TDD implementation
-  - Auto-complete Sequelize model definitions
-  - Generate validation schemas with express-validator
-  
-- **Manual Implementation:**
-  - Business logic for inventory management (purchase/restock)
-  - JWT token generation and verification logic
-  - Custom error handling middleware
-  - Database connection configuration
-
-#### Testing (25% of development time)
-- **Used GitHub Copilot to:**
-  - Generate initial test structure and describe blocks
-  - Suggest edge cases for testing
-  - Create mock data for tests
-  
-- **Manual Implementation:**
-  - Test assertions and expectations
-  - Integration test setup and teardown
-  - Coverage analysis and test improvements
-
-#### Frontend Development (20% of development time)
-- **Used GitHub Copilot to:**
-  - Generate React component boilerplate
-  - Suggest CSS styling patterns
-  - Auto-complete form handling logic
-  - Generate TypeScript interfaces
-  
-- **Manual Implementation:**
-  - UI/UX design decisions
-  - Component architecture and state management
-  - Responsive design breakpoints
-  - User interaction flows
-
-### Reflection on AI Impact
+![Search Feature](screenshots/search.png)  
 
 **Positive Impacts:**
 - ⚡ **Speed:** AI assistance reduced boilerplate code writing time by approximately 40%
@@ -527,19 +470,11 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 ## 👤 Author
 
-**Your Name**
-- Email: your.email@example.com
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your Name](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Thanks to the TDD Kata challenge for the project requirements
-- GitHub Copilot for development assistance
-- The open-source community for amazing tools and libraries
-
----
-
+**Naitik Raj**
+- Email: Naitikraj74600@gmail.com
+- GitHub: [Naitik74600](https://github.com/NAITIK74600)
+- LinkedIn: [Naitik raj](https://www.linkedin.com/in/naitik74600?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app )
+- 
 **Note:** This project was created as part of a TDD kata assessment and demonstrates modern full-stack development practices with AI assistance.
 
 Made with ❤️ and ☕
