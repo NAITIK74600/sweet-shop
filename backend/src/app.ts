@@ -3,6 +3,7 @@ import cors from 'cors';
 import dotenv from 'dotenv';
 import authRoutes from './routes/auth.routes';
 import sweetRoutes from './routes/sweet.routes';
+import seedRoutes from './routes/seed.routes';
 
 dotenv.config();
 
@@ -16,6 +17,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/sweets', sweetRoutes);
+app.use('/api', seedRoutes);
 
 // Health check
 app.get('/api/health', (req: Request, res: Response) => {
