@@ -11,10 +11,5 @@
       "src": "/api/(.*)",
       "dest": "src/server.ts"
     }
-  ],
-  "env": {
-    "NODE_ENV": "production",
-    "JWT_SECRET": "@jwt-secret",
-    "JWT_EXPIRES_IN": "24h"
-  }
+  ]
 }
