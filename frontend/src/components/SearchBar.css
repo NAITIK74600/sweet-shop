@@ -1,0 +1,89 @@
+.search-bar {
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin-bottom: 2rem;
+}
+
+.search-bar form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.search-fields {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.search-input {
+  padding: 0.75rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.search-input:focus {
+  border-color: #667eea;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.price-input {
+  min-width: 100px;
+}
+
+.search-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-button,
+.reset-button {
+  padding: 0.75rem 2rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.search-button {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  flex: 1;
+}
+
+.search-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.4);
+}
+
+.reset-button {
+  background: #f0f0f0;
+  color: #666;
+}
+
+.reset-button:hover {
+  background: #e0e0e0;
+}
+
+@media (max-width: 900px) {
+  .search-fields {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .search-fields {
+    grid-template-columns: 1fr;
+  }
+
+  .search-actions {
+    flex-direction: column;
+  }
+}
