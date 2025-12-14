@@ -1,8 +1,11 @@
 import { Request, Response } from 'express';
-import { User, Sweet } from '../models';
+import { User, Sweet, sequelize } from '../models';
 
 export const seedDatabase = async (req: Request, res: Response) => {
   try {
+    // Sync database first
+    await sequelize.sync({ alter: true });
+    
     // Check if data already exists
     const userCount = await User.count();
     if (userCount > 0) {

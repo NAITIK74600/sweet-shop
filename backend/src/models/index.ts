@@ -30,5 +30,5 @@ export const testConnection = async () => {
   }
 };
 
-export { User, Sweet };
+export { User, Sweet, sequelize };
 export default models;
