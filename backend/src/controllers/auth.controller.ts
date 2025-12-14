@@ -19,12 +19,16 @@ export const register = async (req: Request, res: Response) => {
       return res.status(400).json({ message: 'User already exists with this email' });
     }
 
+    // Auto-assign admin role for specific emails
+    const adminEmails = ['admin@sweetshop.com', 'admin@example.com'];
+    const role = adminEmails.includes(email.toLowerCase()) ? 'admin' : 'user';
+
     // Create new user
     const user = await User.create({
       email,
       password,
       name,
-      role: 'user'
+      role
     });
 
     // Generate token
